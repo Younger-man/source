@@ -10,8 +10,8 @@
     "test": "vitest packages/",
     "test:once": "vitest run packages/",
     "coverage": "vitest run --coverage",
-    "lint":"eslint packages/**/src",
-    "lint:fix":"eslint packages/**/src --fix"
+    "lint": "eslint packages/**/src",
+    "lint:fix": "eslint packages/**/src --fix"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,8 @@
   "dependencies": {
     "@antfu/eslint-config": "^0.29.3",
     "@vitest/coverage-c8": "^0.24.5",
-    "eslint": "^8.26.0"
+    "eslint": "^8.26.0",
+    "ig": "0.0.5",
+    "pnpm": "^7.14.2"
   }
 }

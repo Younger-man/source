@@ -4,13 +4,14 @@
   "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "types":"dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build":"unbuild",
+    "build": "unbuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies":{
-    "@shengxj/utils":"workspace:*"
+  "dependencies": {
+    "@shengxj/utils": "workspace:*",
+    "pnpm": "^7.14.2"
   },
   "keywords": [],
   "author": "",
