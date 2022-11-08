@@ -6,7 +6,7 @@
   "scripts": {
     "build:utils": "pnpm run --filter @shengxj/utils build",
     "build:reactivity": "pnpm run --filter @shengxj/reactivity build",
-    "build": "pnpm run  --filter=\"@shengxj/*\"  build ",
+    "build": "npm run  --filter=\"@shengxj/*\"  build ",
     "test": "vitest packages/",
     "test:once": "vitest run packages/",
     "coverage": "vitest run --coverage",
@@ -17,9 +17,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.8.4",
-    "unbuild": "^0.9.4",
-    "vitest": "^0.24.5"
+    "typescript": "^4.8.3",
+    "unbuild": "^0.9.0",
+    "vitest": "^0.24.5",
+    "esbuild-wasm":"latest"
   },
   "dependencies": {
     "@antfu/eslint-config": "^0.29.3",
@@ -27,5 +28,8 @@
     "eslint": "^8.26.0",
     "ig": "0.0.5",
     "pnpm": "^7.14.2"
+  },
+  "overrides": {
+    "esbuild":"npm:esbuild-wasm@latest"
   }
 }
