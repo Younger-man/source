@@ -6,7 +6,7 @@
   "scripts": {
     "build:utils": "pnpm run --filter @shengxj/utils build",
     "build:reactivity": "pnpm run --filter @shengxj/reactivity build",
-    "build": "npm run  --filter=\"@shengxj/*\"  build ",
+    "build": "pnpm run  --filter=\"@shengxj/*\"  build ",
     "test": "vitest packages/",
     "test:once": "vitest run packages/",
     "coverage": "vitest run --coverage",
